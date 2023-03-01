@@ -1,6 +1,6 @@
 /**
-* Template Name: FlexStart - v1.12.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+* Template Name: OrxataSoftware - v1.12.0
+* Template URL: https://bootstrapmade.com/OrxataSoftware-bootstrap-startup-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
