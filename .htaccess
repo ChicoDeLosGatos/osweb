@@ -5,7 +5,13 @@
 
     RewriteEngine On
 
+    # Si Accept-Language=es redirecciona a web española
     RewriteCond %{HTTP:Accept-Language} ^es [NC]
     RewriteCond %{HTTP_HOST} !es.orxatasoftware\.com [NC]
     RewriteRule ^(.*)$ https://es.orxatasoftware.com
+
+    # Si no, redirecciona web inglesa
+    RewriteCond %{HTTP_HOST} !en.orxatasoftware\.com [NC]
+    RewriteRule ^(.*)$ https://en.orxatasoftware.com
+
 </IfModule>
