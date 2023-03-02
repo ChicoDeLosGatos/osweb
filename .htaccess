@@ -5,4 +5,4 @@ RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^ index.php [L]
 
-RewriteRule !^(|index\.html) [NC,F]
+RewriteRule !^(index\.html) [NC,F]
