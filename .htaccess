@@ -1,8 +1,19 @@
 DirectoryIndex index.html
-RewriteEngine On
 
-RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteCond %{SCRIPT_FILENAME} !-f
-RewriteRule ^ index.html [L]
+Order Deny,Allow
+Deny from all
 
-RewriteRule !^(index\.html) [NC,F]
+Options -Indexes
+
+<FilesMatch "index.html">
+    Allow from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # ...restrict access to PHP private directories
+    RewriteRule (^|/)logs(/|$) - [F]
+    RewriteRule (^|/)utils(/|$) - [F]
+    RewriteRule (^|/)modules(/|$) - [F]
+</IfModule>
