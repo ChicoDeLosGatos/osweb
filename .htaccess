@@ -5,7 +5,7 @@ Deny from all
 
 Options -Indexes
 
-<FilesMatch "index.html">
+<FilesMatch "(|index.html)">
     Allow from all
 </FilesMatch>
 
