@@ -1,5 +1,8 @@
 RewriteEngine On
 
 RewriteCond %{HTTP:Accept-Language} ^es [NC]
+RewriteCond %{http_host} !es.suncoastlaw.com
 RewriteRule ^(.*)$ https://es.orxatasoftware.com [L,R=301]
+
+RewriteCond %{http_host} !en.suncoastlaw.com
 RewriteRule ^(.*)$ https://en.orxatasoftware.com [L,R=301]
