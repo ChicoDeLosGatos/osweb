@@ -12,6 +12,6 @@
 
     # Si no, redirecciona web inglesa
     # RewriteCond %{HTTP_HOST} !en.orxatasoftware\.com [NC]
-    # RewriteRule ^(.*)$ https://en.orxatasoftware.com
+    RewriteRule ^(.*)$ https://en.orxatasoftware.com
 
 </IfModule>
