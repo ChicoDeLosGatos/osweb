@@ -1,6 +1,5 @@
 RewriteEngine On
 
 RewriteCond %{HTTP:Accept-Language} ^es [NC]
-RewriteRule ^(.*)$ https://es.%{HTTP_HOST} [L,R=301]
-
-RewriteRule ^(.*)$ https://en.%{HTTP_HOST} [L,R=301]
+RewriteRule ^(.*)$ https://es.orxatasoftware.com [L,R=301]
+RewriteRule ^(.*)$ https://en.orxatasoftware.com [L,R=301]
