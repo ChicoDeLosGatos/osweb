@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{HTTP:Accept-Language} ^es [NC]
+RewriteRule ^(.*)$ https://es.%{HTTP_HOST}/%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^(.*)$ https://en.%{HTTP_HOST}/%{REQUEST_URI} [L,R=301]
