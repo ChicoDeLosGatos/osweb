@@ -56,6 +56,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Índice</a></li>
+          <li><a class="nav-link scrollto" href="#wizard">Explicanos tu proyecto</a></li>
           <li><a class="nav-link scrollto" href="#technologies">Tecnologías</a></li>
           <li><a class="nav-link scrollto" href="#projects">Proyectos</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
@@ -137,8 +138,9 @@
 
         <div class="row">
           <a href='#contact' id="gotocontact" class="scrollto" style="display:none;"></a>
+          <a href='#projects' id="gotoprojects" class="scrollto" style="display:none;"></a>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="box" onclick="$('a#gotocontact')[0].trigger('click')">
+            <div class="box" onclick="$('a#gotocontact')[0].click()">
               <img src="assets/img/values-1.png" class="img-fluid" alt="">
               <h3>Tengo un proyecto existente</h3>
               <p>Ya tengo una aplicación o sitio web funcionando y necesito añadirle nuevas funcionalidades o realizar cambios.</p>
@@ -146,7 +148,7 @@
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="box" onclick="goToByScroll('contact')">
+            <div class="box" onclick="$('a#gotocontact')[0].click()">
               <img src="assets/img/values-2.png" class="img-fluid" alt="">
               <h3>Tengo claro mi proyecto</h3>
               <p>Mi proyecto no existe todavía, pero sé cómo quiero que sea la web, y tengo claros todos los aspectos que tendrá la aplicación.</p>
@@ -154,7 +156,7 @@
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-            <div class="box" onclick="goToByScroll('projects')">
+            <div class="box" onclick="$('a#gotoprojects')[0].click()">
               <img src="assets/img/values-3.png" class="img-fluid" alt="">
               <h3>Tengo clara mi idea</h3>
               <p>La idea de mi proyecto la tengo clara, pero necesito orientación para elegir cómo quiero que sea la web y para diseñar el proyecto.</p>
