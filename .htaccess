@@ -1,12 +1,12 @@
 DirectoryIndex index.html
 
 Order Deny,Allow
-Deny from all
+Allow from all
 
 Options -Indexes
 
-<FilesMatch "(|index.html)">
-    Allow from all
+<FilesMatch "(*vendor*)">
+    Deny from all
 </FilesMatch>
 
 <IfModule mod_rewrite.c>
